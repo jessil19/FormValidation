@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="des.css" />
+  </head>
+  <body>
+        <h1>Test taker registration for Taking online Tests</h1>
+        <h5>Register to Take your Tests on ClassMaker!</h5>
+        
+        <div class="input-section">
+          <label>Registration Code<span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter Registration Code"
+            id="code"
+            required/>
+          <span id="code-error" class="hide required-color error-message"
+            >Registration Code Should Have 11 Digits</span>
+          <span id="empty-code" class="hide required-color error-message">
+            Code cannot be empty</span>
+            <p>I don't have a Registration Code?</p>
+          </div>
+          <br>
+          <br>
+
+          <div class="input-section">
+          <label>First Name <span class="required-color">*</span></label>
+          <input type="text"placeholder="Enter First Name" id="first-name-input" required />
+          <span id="first-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >First Name Cannot Be Empty</span
+          >
+        </div>
+
+         <div class="input-section">
+          <label>Last Name<span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Enter Last Name"
+            id="last-name-input"
+            required
+          />
+          <span id="last-name-error" class="hide required-color error-message"
+            >Invalid Input</span>
+          <span id="empty-last-name" class="hide required-color error-message">
+            Last Name Cannot Be Empty
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>User Name<span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Enter User Name"
+            id="user-name-input"
+            required
+          />
+          <span id="user-name-error" class="hide required-color error-message"
+            >Invalid Input</span>
+          <span id="empty-last-name" class="hide required-color error-message">
+            User Name Cannot Be Empty
+          </span>
+        </div>
+
+        
+        <div class="input-section">
+          <label>Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            id="password"
+            required/>
+          <span id="password-error" class="hide required-color error-message">
+            Passwords must be atleast 10 Character long. Maximum password lenght must be 72 characters. Password must contain atleast:
+            <br>
+            1 Number
+            <br>
+            1 Letter
+          </span>
+          <span id="empty-password" class="hide required-color error-message">
+            Password Cannot Be Empty
+          </span>
+
+
+
+        <div class="input-section">
+          <label>Confirm Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            id="verify-password"
+            placeholder="Confirm Password"
+            required/>
+          <span
+            id="verify-password-error"
+            class="hide required-color error-message"
+            >Should Be Same As Previous Password</span>
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password Cannot Be Empty</span>
+        </div>
+
+        <div class="input-section">
+          <label>Email address <span class="required-color">*</span></label>
+          <input type="email" placeholder="Enter Email" id="email" required />
+          <span id="email-error" class="hide required-color error-message"
+            >Invalid Email</span>
+          <span id="empty-email" class="hide required-color error-message"
+            >Email Cannot Be Empty</span>
+            <p>Email address is optional. ClassMarker only uses your email address to send you a new password if you forget it.</p>
+        </div>
+
+          <div class="input-section">
+          <label>Phone <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter Phone Number"
+            id="phone"
+            required/>
+          <span id="phone-error" class="hide required-color error-message"
+            >Phone Number Should Have 10 Digits</span>
+          <span id="empty-phone" class="hide required-color error-message">
+            Phone cannot be empty</span>
+
+            
+        <div class="select">
+        <label>Select your Country<span class="required-color">*</label>
+        <select name="country" id="country">
+            <option>Please Select</option>
+            <option>China</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>Indonesia</option>
+            <option>Pakistan</option>
+            <option>Brazil</option>
+            <option>Nigeria</option>
+            <option>Bangladesh</option>
+            <option>Russia</option>
+            <option>Mexico</option>
+            <option>Japan</option>
+            <option>Ethiopia</option>
+            <option>Philippines</option>
+            <option>Egypt</option>
+            <option>Vietnam</option>
+            <option>DR Congo</option>
+            <option>Turkey</option>
+            <option>Iran</option>
+            <option>Germany</option>
+            <option>Thailand</option>
+            <option>United Kingdom</option>
+            <option>France</option>
+            <option>Italy</option>
+            <option>Tazania</option>
+            <option>South Africa</option>
+            <option>Myanmar</option>
+            <option>Kenya</option>
+            <option>South Korea</option>
+            <option>Columbia</option>
+            <option>Spain</option>
+            <option>Uganda</option>
+            <option>Argentina</option>
+            <option>Algeria</option>
+            <option>Sudan</option>
+            <option>Ukraine</option>
+            <option>Iraq</option>
+            <option>Afghanisthan</option>
+            <option>Poland</option>
+            <option>Canada</option>
+            <option>Moroco</option>
+            <option>Saudi Arabia</option>
+        </select> 
+        </div>
+
+        <div class="agche">
+          <input type="checkbox" name="check" >
+          <label for="checkbox">I agree with the ClassMarker.com Terms & Conditions and Privacy Policy.</label>
+        </div>
+        
+        <button id="submit-button">Register</button>
+      </form>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
